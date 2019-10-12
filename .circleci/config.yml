@@ -43,10 +43,4 @@ workflows:
   build_update_deploy:
     jobs:
       - build
-      - deploy:
-          filters:
-            branches:
-              only:
-                - master
-          requires:
-            - build
+
